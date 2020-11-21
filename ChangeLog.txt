@@ -1,0 +1,11 @@
+[21/11/2020]LuisG -  commit "Creando_Navegacion"
+    * Se registraron las primeras rutas
+    * Se crearon las siguientes vistas:
+        - Login
+        - Index
+        - Mascota Perdida 
+        - Mi Veterinaria
+        - Calendario
+        - Comunidad
+        - Datos Mascota
+    * Se creó la navegación entre las vistas creadas
