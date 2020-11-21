@@ -15,6 +15,17 @@ class _CalendarioPage extends State<CalendarioPage> {
         title: Text("Calendario"),
         centerTitle: true,
       ),
+      body: Column(
+        children: [
+          RaisedButton(
+            color: Colors.blue,
+            child: Text('Vacunar'),
+            onPressed: () {
+              Navigator.of(context).pushNamed('/Pages/VacunarPage');
+            },
+          ),
+        ],
+      ),
     );
   }
 }
