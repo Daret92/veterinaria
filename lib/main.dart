@@ -7,7 +7,7 @@ import 'package:veterinaria/pages/ComunidadPage/ComunidadPage.dart';
 import 'package:veterinaria/pages/DatosMascotaPage/DatosMascotaPage.dart';
 import 'package:veterinaria/pages/MascotaPerdidaPage/MascotaPerdidaPage.dart';
 import 'package:veterinaria/pages/MiVeterinariaPage/MiVeterinariaPage.dart';
-import 'package:veterinaria/pages/MiVeterinariaPage/NombreVeterinariaPage.dart';
+import 'package:veterinaria/pages/MiVeterinariaPage/ListasVeterinariasPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,8 +30,8 @@ class MyApp extends StatelessWidget {
         '/Pages/MascotaPerdidaPage': (BuildContext context) =>
             MascotaPerdidaPage(),
         '/Pages/MiVeterinariaPage': (BuildContext context) => MiVeterinaria(),
-        '/Pages/NombreVeterinariaPage': (BuildContext context) =>
-            NombreVeterinariaPage(),
+        '/Pages/ListasVeterinariasPage': (BuildContext context) =>
+            ListasVeterinariasPage(),
         '/Pages/CalendarioPage': (BuildContext context) => CalendarioPage(),
         '/Pages/VacunarPage': (BuildContext context) => VacunarPage(),
         '/Pages/ComunidadPage': (BuildContext context) => ComunidadPage(),
