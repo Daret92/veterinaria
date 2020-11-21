@@ -9,3 +9,10 @@
         - Comunidad
         - Datos Mascota
     * Se creó la navegación entre las vistas creadas
+[22/11/2020]EneasM - commit "Continuacion_Navegacion"
+    *Se agrego rutas nuevas en el archivo main
+    *Las nuevas vistas que se crearon son:
+        -VacunarPage:
+        -NombreVeterinariaPage:
+            En esta vista se agregaron dos botones para abrir un alerta que agrege o quite de favoritos las veterinarias
+    *Se hizo la navegacion entre las nuevas vistas.
