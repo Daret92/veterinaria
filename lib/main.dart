@@ -27,13 +27,16 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/Dashboard/LoginDashboard': (BuildContext context) => LoginDashboard(),
         '/Dashboard/IndexDashboard': (BuildContext context) => IndexDashboard(),
+
         '/Pages/MascotaPerdidaPage': (BuildContext context) =>
             MascotaPerdidaPage(),
         '/Pages/MiVeterinariaPage': (BuildContext context) => MiVeterinaria(),
         '/Pages/NombreVeterinariaPage': (BuildContext context) =>
             NombreVeterinariaPage(),
+        //<--------- Start calendario Page  ---------->
         '/Pages/CalendarioPage': (BuildContext context) => CalendarioPage(),
         '/Pages/VacunarPage': (BuildContext context) => VacunarPage(),
+        //<--------- End calendario Page ------------->
         '/Pages/ComunidadPage': (BuildContext context) => ComunidadPage(),
         '/Pages/DatosMascotaPage': (BuildContext context) => DatosMascotaPage(),
       },
