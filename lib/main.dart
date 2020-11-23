@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:veterinaria/Dashboard/IndexDashboard.dart';
 import 'package:veterinaria/Dashboard/LoginDashboard.dart';
-import 'package:veterinaria/pages/CalendarioPage/CalendarioPage.dart';
-import 'package:veterinaria/pages/CalendarioPage/VacunarPage.dart';
+import 'package:veterinaria/Dashboard/RegistroDashboard.dart';
+import 'package:veterinaria/pages/CalendarioVacunacionPage/CalendarioVacunacionPage.dart';
+import 'package:veterinaria/pages/CalendarioVacunacionPage/VacunarPage.dart';
 import 'package:veterinaria/pages/ComunidadPage/ComunidadPage.dart';
 import 'package:veterinaria/pages/DatosMascotaPage/DatosMascotaPage.dart';
 import 'package:veterinaria/pages/MascotaPerdidaPage/MascotaPerdidaPage.dart';
+import 'package:veterinaria/pages/MiVeterinariaPage/ListaFavoritoVeterinaria.dart';
 import 'package:veterinaria/pages/MiVeterinariaPage/MiVeterinariaPage.dart';
-import 'package:veterinaria/pages/MiVeterinariaPage/NombreVeterinariaPage.dart';
+import 'package:veterinaria/pages/MiVeterinariaPage/ListasVeterinariasPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,16 +27,24 @@ class MyApp extends StatelessWidget {
       home: MyHomePage(title: 'Flutter Demo Home Page'),
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
+        //<--------- Start Dashboard  ------------->
         '/Dashboard/LoginDashboard': (BuildContext context) => LoginDashboard(),
         '/Dashboard/IndexDashboard': (BuildContext context) => IndexDashboard(),
-
+        '/Dashboard/RegistroDashboard': (BuildContext context) =>
+            RegistroDashboard(),
+        //<--------- End Dashboard ------------->
         '/Pages/MascotaPerdidaPage': (BuildContext context) =>
             MascotaPerdidaPage(),
+        //<--------- Start Veterinaria Page ------------->
         '/Pages/MiVeterinariaPage': (BuildContext context) => MiVeterinaria(),
-        '/Pages/NombreVeterinariaPage': (BuildContext context) =>
-            NombreVeterinariaPage(),
-        //<--------- Start calendario Page  ---------->
-        '/Pages/CalendarioPage': (BuildContext context) => CalendarioPage(),
+        '/Pages/ListasVeterinariasPage': (BuildContext context) =>
+            ListasVeterinariasPage(),
+        '/Pages/ListaFavoritoVeterinariaPage': (BuildContext context) =>
+            ListaFavoritoVeterinaria(),
+        //<--------- End Veterinaria Page ------------->
+        //<--------- Start Calendario Page ------------->
+        '/Pages/CalendarioVacunacionPage': (BuildContext context) =>
+            CalendarioVacunacionPage(),
         '/Pages/VacunarPage': (BuildContext context) => VacunarPage(),
         //<--------- End calendario Page ------------->
         '/Pages/ComunidadPage': (BuildContext context) => ComunidadPage(),

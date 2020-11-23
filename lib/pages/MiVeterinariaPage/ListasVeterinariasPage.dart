@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NombreVeterinariaPage extends StatefulWidget {
-  NombreVeterinariaPage({Key key}) : super(key: key);
+class ListasVeterinariasPage extends StatefulWidget {
+  ListasVeterinariasPage({Key key}) : super(key: key);
 
   @override
-  _NombreVeterinariaPage createState() => _NombreVeterinariaPage();
+  _ListasVeterinariasPage createState() => _ListasVeterinariasPage();
 }
 
-class _NombreVeterinariaPage extends State<NombreVeterinariaPage> {
+class _ListasVeterinariasPage extends State<ListasVeterinariasPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

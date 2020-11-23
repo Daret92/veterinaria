@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CalendarioPage extends StatefulWidget {
-  CalendarioPage({Key key}) : super(key: key);
+class CalendarioVacunacionPage extends StatefulWidget {
+  CalendarioVacunacionPage({Key key}) : super(key: key);
 
   @override
-  _CalendarioPage createState() => _CalendarioPage();
+  _CalendarioVacunacionPage createState() => _CalendarioVacunacionPage();
 }
 
-class _CalendarioPage extends State<CalendarioPage> {
+class _CalendarioVacunacionPage extends State<CalendarioVacunacionPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
