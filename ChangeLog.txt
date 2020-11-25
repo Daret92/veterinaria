@@ -1,3 +1,7 @@
+[25/11/2020] EneasM - commit "Interfaz_Index"
+    *Se desarrolló la interfaz de las vistas:
+        - Index
+
 [25/11/2020] LuisG - commit "MOD_interfazLogin"
     *Se desarrolló la interfaz de las vistas:
         - Login
