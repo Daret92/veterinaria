@@ -5,7 +5,8 @@ import 'package:veterinaria/Dashboard/RegistroDashboard.dart';
 import 'package:veterinaria/pages/CalendarioVacunacionPage/CalendarioVacunacionPage.dart';
 import 'package:veterinaria/pages/CalendarioVacunacionPage/VacunarPage.dart';
 import 'package:veterinaria/pages/ComunidadPage/ComunidadPage.dart';
-import 'package:veterinaria/pages/DatosMascotaPage/DatosMascotaPage.dart';
+import 'package:veterinaria/pages/DatosDuenioPage/DatosDuenioPage.dart';
+import 'package:veterinaria/pages/ListaMascotaPage/ListaMascotaPage.dart';
 import 'package:veterinaria/pages/MascotaPerdidaPage/MascotaPerdidaPage.dart';
 import 'package:veterinaria/pages/MiVeterinariaPage/ListaFavoritoVeterinaria.dart';
 import 'package:veterinaria/pages/MiVeterinariaPage/MiVeterinariaPage.dart';
@@ -48,7 +49,8 @@ class MyApp extends StatelessWidget {
         '/Pages/VacunarPage': (BuildContext context) => VacunarPage(),
         //<--------- End calendario Page ------------->
         '/Pages/ComunidadPage': (BuildContext context) => ComunidadPage(),
-        '/Pages/DatosMascotaPage': (BuildContext context) => DatosMascotaPage(),
+        '/Pages/ListaMascotaPage': (BuildContext context) => ListaMascotaPage(),
+        '/Pages/DatosDuenioPage': (BuildContext context) => DatosDuenioPage(),
       },
     );
   }

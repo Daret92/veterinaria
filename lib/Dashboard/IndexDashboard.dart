@@ -22,10 +22,10 @@ class _IndexDashboard extends State<IndexDashboard> {
             child: IconButton(
               icon: Icon(
                 Icons.priority_high,
-                size: 80,
+                size: 60,
               ),
               onPressed: () {
-                //Navigator.of(context).pushNamed('/Pages/MascotaPerdidaPage');
+                Navigator.of(context).pushNamed('/Pages/MascotaPerdidaPage');
               },
             ),
           ),
@@ -79,7 +79,8 @@ class _IndexDashboard extends State<IndexDashboard> {
             width: double.infinity,
             child: GestureDetector(
               onTap: () {
-                Navigator.of(context).pushNamed('/Pages/CalendarioPage');
+                Navigator.of(context)
+                    .pushNamed('/Pages/CalendarioVacunacionPage');
               },
               child: Container(
                 child: Container(
@@ -127,7 +128,7 @@ class _IndexDashboard extends State<IndexDashboard> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Mi veterinaria",
+                        "Comunidad",
                         style: TextStyle(
                             fontSize: 25,
                             color: Colors.black,
@@ -161,7 +162,10 @@ class _IndexDashboard extends State<IndexDashboard> {
                         color: Colors.white,
                         size: 25,
                       )),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context)
+                            .pushNamed('/Pages/DatosDuenioPage');
+                      },
                     ),
                     Text(
                       'Mi Perfil',
@@ -181,7 +185,10 @@ class _IndexDashboard extends State<IndexDashboard> {
                         color: Colors.white,
                         size: 25,
                       )),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context)
+                            .pushNamed('/Pages/ListaMascotaPage');
+                      },
                     ),
                     Text(
                       'Agregar Mascota',
