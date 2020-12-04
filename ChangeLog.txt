@@ -1,3 +1,11 @@
+[03/12/2020]LuisG - commit "Add_interfaces"
+    Se le añadio la interfaz a las siguientes vistas:
+        - Calendario y vacunacion 
+        - Comunidad
+        - Formulario del usuario (dueño)
+        - Formulario de añadir nuevas mascotas
+        - Mi veterinaria
+
 [26/11/2020]LuisG - commit "add_perfil"
     Se agregó a la navegación las vistas:
         - Perfil de usuario (dueño de las mascotas)

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 estiloTextField(texto) {
   return InputDecoration(
+    isDense: true,
+    contentPadding: EdgeInsets.fromLTRB(10, 10, 10, 10),
     hintText: texto,
     labelText: texto,
     hintStyle: TextStyle(color: Colors.grey),

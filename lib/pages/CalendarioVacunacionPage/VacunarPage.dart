@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:qr_flutter/qr_flutter.dart';
+import 'package:veterinaria/complement/estilosComplement.dart';
 
 class VacunarPage extends StatefulWidget {
   VacunarPage({Key key}) : super(key: key);
@@ -8,6 +10,7 @@ class VacunarPage extends StatefulWidget {
 }
 
 class _VacunarPage extends State<VacunarPage> {
+  String cadenaQR = "";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,20 +20,21 @@ class _VacunarPage extends State<VacunarPage> {
       ),
       body: Column(
         children: [
-          RaisedButton(
-            color: Colors.blue,
-            child: Text('Nombre'),
-            onPressed: () {},
+          Container(
+            padding: EdgeInsets.only(top: 20, left: 50, right: 50),
+            child: TextFormField(decoration: estiloTextField("Nombre")),
           ),
-          RaisedButton(
-            color: Colors.blue,
-            child: Text('Raza'),
-            onPressed: () {},
+          Container(
+            padding: EdgeInsets.only(top: 20, left: 50, right: 50),
+            child: TextFormField(decoration: estiloTextField("Edad")),
           ),
-          RaisedButton(
-            color: Colors.blue,
-            child: Text('Edad'),
-            onPressed: () {},
+          Container(
+            padding: EdgeInsets.only(top: 20, left: 50, right: 50),
+            child: TextFormField(decoration: estiloTextField("Raza")),
+          ),
+          Container(
+            padding: EdgeInsets.only(left: 20, right: 20, top: 40),
+            child: QrImage(data: cadenaQR),
           ),
         ],
       ),

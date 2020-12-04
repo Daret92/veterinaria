@@ -27,22 +27,40 @@ class _ListaMascotaPage extends State<ListaMascotaPage> {
                         new Column(
                           children: [
                             Container(
-                              padding: EdgeInsets.only(
-                                  top: 20, left: 50, right: 50, bottom: 20),
+                              padding: EdgeInsets.only(top: 10),
+                              child: Text(
+                                "Añadir una nueva mascota",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                            ),
+                            Container(
+                              height: 200,
+                              child: Image.asset("assets/noImage.png"),
+                            ),
+                            Container(
+                              padding:
+                                  EdgeInsets.only(top: 15, left: 50, right: 50),
                               child: TextFormField(
                                   decoration: estiloTextField("Nombre")),
                             ),
                             Container(
-                              padding: EdgeInsets.only(
-                                  top: 20, left: 50, right: 50, bottom: 20),
+                              padding:
+                                  EdgeInsets.only(top: 20, left: 50, right: 50),
                               child: TextFormField(
                                   decoration: estiloTextField("Edad")),
                             ),
                             Container(
-                              padding: EdgeInsets.only(
-                                  top: 20, left: 50, right: 50, bottom: 20),
+                              padding:
+                                  EdgeInsets.only(top: 20, left: 50, right: 50),
                               child: TextFormField(
                                   decoration: estiloTextField("Raza")),
+                            ),
+                            Container(
+                              padding: EdgeInsets.only(
+                                  top: 20, left: 50, right: 50, bottom: 10),
+                              child: TextFormField(
+                                  decoration:
+                                      estiloTextField("Número de contacto")),
                             ),
                             RaisedButton(
                                 color: Colors.blue,
